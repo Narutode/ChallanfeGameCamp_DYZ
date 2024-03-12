@@ -81,7 +81,7 @@ public class CacodemonController : MonoBehaviour
     private void Patrolling()
     {
         if (!walkPointSet) SearchWalkPoint();
-        if (walkPointSet) agent.SetDestination(walkPoint);
+        if (walkPointSet) Debug.Log($"SetDestination : {agent.SetDestination(walkPoint)}");
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
@@ -97,7 +97,12 @@ public class CacodemonController : MonoBehaviour
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
+        Debug.Log($"SearchWalkPoint : {walkPoint}");
+        Debug.DrawRay(transform.position, -transform.up, Color.green);
+
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround)) walkPointSet = true;
+
+        Debug.Log($"WalkPointSet : {walkPointSet}");
     }
 
     private void ChasePlayer()
@@ -150,7 +155,7 @@ public class CacodemonController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+   /* private void OnCollisionEnter(Collision collision)
     {
 
         Debug.Log("hit");
@@ -159,4 +164,5 @@ public class CacodemonController : MonoBehaviour
 
 
     }
+   */
 }
