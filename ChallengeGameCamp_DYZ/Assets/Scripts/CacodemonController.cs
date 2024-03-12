@@ -81,7 +81,7 @@ public class CacodemonController : MonoBehaviour
     private void Patrolling()
     {
         if (!walkPointSet) SearchWalkPoint();
-        if (walkPointSet) Debug.Log($"SetDestination : {agent.SetDestination(walkPoint)}");
+        if (walkPointSet) agent.SetDestination(walkPoint);
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
