@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4665231376761104582}
   - component: {fileID: 6336852940837987693}
+  - component: {fileID: 2058844632755704968}
   m_Layer: 0
   m_Name: Imp
   m_TagString: Untagged
@@ -54,6 +55,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2058844632755704968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972468256519129315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efdaae6deb666a44fb2b09789cf8093d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impAnimator: {fileID: 0}
 --- !u!1001 &8438799110622138564
 PrefabInstance:
   m_ObjectHideFlags: 0
