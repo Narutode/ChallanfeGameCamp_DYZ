@@ -43,19 +43,22 @@ public class RoomLayoutGenerator : MonoBehaviour
         allRooms.RemoveAll(t => t == null);
         foreach (var room in allRooms)
         {
-            var linksParent = getLinks(room);
-            foreach (var linkP in linksParent)
+            if (room != null)
             {
-                foreach (var aRoom in availableRooms)
+                var linksParent = getLinks(room);
+                foreach (var linkP in linksParent)
                 {
-                    spawnedRooms.AddRange(spawnRoom4Orientation(aRoom, room, linkP, lvl));
-                }
-                yield return null;
-                spawnedRooms.RemoveAll(t => t == null);
-                if (spawnedRooms.Count > 0)
-                {
-                    int randIndex = Random.Range(0, spawnedRooms.Count);
-                    spawnedRooms[randIndex].tag = "Placed";
+                    foreach (var aRoom in availableRooms)
+                    {
+                        spawnedRooms.AddRange(spawnRoom4Orientation(aRoom, room, linkP, lvl));
+                    }
+                    yield return null;
+                    spawnedRooms.RemoveAll(t => t == null);
+                    if (spawnedRooms.Count > 0)
+                    {
+                        int randIndex = Random.Range(0, spawnedRooms.Count);
+                        spawnedRooms[randIndex].tag = "Placed";
+                    }
                 }
             }
         }
@@ -63,10 +66,11 @@ public class RoomLayoutGenerator : MonoBehaviour
         allRooms.Clear();
         allRooms = spawnedRooms;
         coroutineStop = true;
+
         yield return null;
     }
 
-    List<GameObject> spawnRoom4Orientation(GameObject room2spawn, GameObject parentRoom, 
+    List<GameObject> spawnRoom4Orientation(GameObject room2spawn, GameObject parentRoom,
         Vector3 linkP, int lvl)
     {
         List<GameObject> spawnedRooms = new List<GameObject>();
@@ -77,14 +81,15 @@ public class RoomLayoutGenerator : MonoBehaviour
             {
                 GameObject room2 = Instantiate(room2spawn);
                 room2.transform.position = Vector3.zero;
+                room2.transform.Rotate(new Vector3(0, i * 90, 0));
                 room2.GetComponent<Room>().parent = parentRoom; 
                 room2.GetComponent<Room>().level = maxLevel-lvl;
-                room2.transform.Rotate(new Vector3(0, i * 90, 0));
-                var link2 = room2.transform.Find("Link"+l).position;
+                var link2 = room2.transform.Find("Link" + l).position;
+                //room2.transform.rotation = linkP.rotation;
                 room2.transform.position = linkP - link2;
                 spawnedRooms.Add(room2);
             }
-        }      
+        }
         return spawnedRooms;
     }
 
