@@ -40,7 +40,7 @@ public class CacodemonController : MonoBehaviour
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
-        projectile = GameObject.Find("Bullet");
+        projectile = GameObject.Find("Cacodemon-Bullet");
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -59,7 +59,7 @@ public class CacodemonController : MonoBehaviour
         }
 
         if (playerInSightRange && !playerInAttackRange)
-        {
+        {        
             ChasePlayer();
             Debug.Log("Chase");
 
@@ -114,15 +114,18 @@ public class CacodemonController : MonoBehaviour
     private void AttackPlayer()
     {
         // Ennemi s'arrête pour attaquer
-        agent.SetDestination(transform.position);
+        //agent.SetDestination(transform.position);
 
         transform.LookAt(player);
+
+        
 
         if (!alreadyAttacked)
         {
             // Attaque
+            transform.LookAt(player);
             Rigidbody rb = Instantiate(projectile, spawnBullet.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 100f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * 25f, ForceMode.Impulse);
             //rb.AddForce(transform.up * 5f,ForceMode.Impulse);
 
             alreadyAttacked = true;
