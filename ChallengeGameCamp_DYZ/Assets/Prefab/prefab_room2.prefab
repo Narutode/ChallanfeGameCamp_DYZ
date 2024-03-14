@@ -37,10 +37,7 @@ Transform:
   - {fileID: 5390465996861105337}
   - {fileID: 5091088002260102644}
   - {fileID: 4545210797694234141}
-<<<<<<< HEAD
   - {fileID: 2383318348168023461}
-=======
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -141,13 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a9fa803e1593d4d8c63bb121794c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   linkCount: 4
-=======
-  parent: {fileID: 0}
-  linkCount: 3
-  level: 0
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
 --- !u!54 &3437722569442973116
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -218,12 +209,8 @@ Transform:
   m_LocalPosition: {x: 8.23, y: -0.75, z: 3.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 2823921175745895414}
-=======
-  m_Children: []
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
   m_Father: {fileID: 1346580379103616571}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -254,7 +241,6 @@ Transform:
   m_LocalPosition: {x: -7.35, y: -0.75, z: 0.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 2338342324062357741}
   m_Father: {fileID: 1346580379103616571}
@@ -292,12 +278,6 @@ Transform:
   m_Father: {fileID: 1346580379103616571}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
-  m_Children: []
-  m_Father: {fileID: 1346580379103616571}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
 --- !u!1 &7395548617212273161
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +305,6 @@ Transform:
   m_LocalPosition: {x: 8.23, y: -0.75, z: -3.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 2825450088581952835}
   m_Father: {fileID: 1346580379103616571}
@@ -627,9 +606,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8425862090240909043, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
   m_PrefabInstance: {fileID: 6097268174808602142}
   m_PrefabAsset: {fileID: 0}
-=======
-  m_Children: []
-  m_Father: {fileID: 1346580379103616571}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e

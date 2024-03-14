@@ -153,26 +153,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startRoom: {fileID: 3575799330493584276, guid: 387fdac682fae934eacfafca4d82970c, type: 3}
-<<<<<<< HEAD
   endRoom: {fileID: 6404768512028643463, guid: 90386fa6fddf51942a9d5be41c05c172, type: 3}
   availableRooms:
   - {fileID: 1872322157238486145, guid: 0a9d48a98cdc0c14ba893e710a082900, type: 3}
   - {fileID: 3936827937188534807, guid: ba4457cd5d0892640b521ba79783fb88, type: 3}
-=======
-  availableRooms:
-  - {fileID: 1872322157238486145, guid: 0a9d48a98cdc0c14ba893e710a082900, type: 3}
-  - {fileID: 3936827937188534807, guid: ba4457cd5d0892640b521ba79783fb88, type: 3}
-  - {fileID: 6404768512028643463, guid: 90386fa6fddf51942a9d5be41c05c172, type: 3}
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
   spawnedRooms: []
   allRooms: []
   maxLevel: 5
   curLevel: 0
   coroutineStop: 1
-<<<<<<< HEAD
   endPlaced: 0
-=======
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
 --- !u!4 &1281759341
 Transform:
   m_ObjectHideFlags: 0

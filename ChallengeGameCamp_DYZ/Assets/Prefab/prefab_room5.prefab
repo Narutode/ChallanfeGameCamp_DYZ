@@ -27,12 +27,8 @@ Transform:
   m_LocalPosition: {x: -6.98, y: 0.75, z: -0.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 3659787817821826816}
-=======
-  m_Children: []
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
   m_Father: {fileID: 6028525135259191869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -154,13 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a9fa803e1593d4d8c63bb121794c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   linkCount: 1
-=======
-  parent: {fileID: 0}
-  linkCount: 1
-  level: 0
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
 --- !u!54 &-4677077278933099280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -204,7 +194,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7875868240290995686, guid: 92a539466d65f3c45a09bb2975deb974, type: 3}
-<<<<<<< HEAD
 --- !u!1001 &5054306847611105779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -279,5 +268,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8425862090240909043, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
   m_PrefabInstance: {fileID: 5054306847611105779}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e

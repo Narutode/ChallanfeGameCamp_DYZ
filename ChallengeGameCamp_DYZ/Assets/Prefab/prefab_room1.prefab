@@ -27,12 +27,8 @@ Transform:
   m_LocalPosition: {x: -5.74, y: -2.05, z: -4.14}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 5661194689587582988}
-=======
-  m_Children: []
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
   m_Father: {fileID: 4239041904749447470}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -160,13 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a9fa803e1593d4d8c63bb121794c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   linkCount: 2
-=======
-  parent: {fileID: 0}
-  linkCount: 2
-  level: 0
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
 --- !u!54 &4526164037847917522
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -237,7 +227,6 @@ Transform:
   m_LocalPosition: {x: -5.74, y: -2.045, z: 3.028}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
-<<<<<<< HEAD
   m_Children:
   - {fileID: 2873198925523558980}
   m_Father: {fileID: 4239041904749447470}
@@ -375,9 +364,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8425862090240909043, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
   m_PrefabInstance: {fileID: 5994585630940658871}
   m_PrefabAsset: {fileID: 0}
-=======
-  m_Children: []
-  m_Father: {fileID: 4239041904749447470}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 02cb60623ccc53fb8498f98de08e313cee594d1e
