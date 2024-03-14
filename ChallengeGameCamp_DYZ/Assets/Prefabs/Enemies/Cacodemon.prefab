@@ -89,7 +89,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   health: 100
-  bulletSpeed: 20
+  bulletSpeed: 10
   scoreEndGame: {fileID: 0}
   scoreInGame: {fileID: 0}
   spawnBullet: {fileID: 8345736733184896367}

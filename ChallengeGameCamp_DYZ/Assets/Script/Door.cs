@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-           // gameObject.transform.position.
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y * 5, gameObject.transform.position.z);
         }
        
     }

@@ -126,7 +126,9 @@ public class CacodemonController : MonoBehaviour
         {
             // Attaque
             transform.LookAt(player);
-            Rigidbody rb = Instantiate(projectile, spawnBullet.position, Quaternion.identity).GetComponent<Rigidbody>();
+            GameObject bullet = Instantiate(projectile, spawnBullet.position, Quaternion.identity);
+            bullet.GetComponent<BulletDespawn>().isFirst = false;
+            Rigidbody rb = bullet.GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
             //rb.AddForce(transform.up * 5f,ForceMode.Impulse);
 
