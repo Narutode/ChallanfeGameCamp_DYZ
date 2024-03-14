@@ -49,32 +49,35 @@ public class RoomLayoutGenerator : MonoBehaviour
                 var linksParent = getLinks(room);
                 foreach (var linkP in linksParent)
                 {
+                    List<GameObject> currentSpawnedRooms = new List<GameObject>();
+
                     if (room != null)
                     {
                         if (curLevel == maxLevel && !endPlaced)
                         {
-                            spawnedRooms.AddRange(spawnRoom4Orientation(endRoom, room, linkP.position));
+                            currentSpawnedRooms.AddRange(spawnRoom4Orientation(endRoom, room, linkP.position));
                             yield return null;
-                            spawnedRooms.RemoveAll(t => t == null);
+                            currentSpawnedRooms.RemoveAll(t => t == null);
                         }
                         else
                         {
                             foreach (var aRoom in availableRooms)
                             {
-                                spawnedRooms.AddRange(spawnRoom4Orientation(aRoom, room, linkP.position));
+                                currentSpawnedRooms.AddRange(spawnRoom4Orientation(aRoom, room, linkP.position));
                             }
                             yield return null;
-                            spawnedRooms.RemoveAll(t => t == null);
+                            currentSpawnedRooms.RemoveAll(t => t == null);
                         }
-                        if (spawnedRooms.Count > 0)
+                        if (currentSpawnedRooms.Count > 0)
                         {
-                            int randIndex = Random.Range(0, spawnedRooms.Count);
-                            spawnedRooms[randIndex].tag = "Placed";
-                            if(linkP != null) {
-                                var door = linkP.Find("Door");
+                            int randIndex = Random.Range(0, currentSpawnedRooms.Count);
+                            currentSpawnedRooms[randIndex].tag = "Placed";
+                            if(linkP != null && linkP.childCount > 0) {
+                                var door = linkP.GetChild(0);            
                                 if (door != null)
                                     door.GetComponent<Door>().canOpen = true;
                             }
+                            spawnedRooms.AddRange(currentSpawnedRooms);
                         }
                     }
                 }
