@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 32779772}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,6 +257,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -270,7 +271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69113267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +488,7 @@ GameObject:
   - component: {fileID: 85957512}
   - component: {fileID: 85957511}
   - component: {fileID: 85957510}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +632,7 @@ GameObject:
   - component: {fileID: 103383413}
   - component: {fileID: 103383412}
   - component: {fileID: 103383411}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 119902240}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +777,7 @@ GameObject:
   - component: {fileID: 126545702}
   - component: {fileID: 126545701}
   - component: {fileID: 126545700}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -889,7 +890,7 @@ GameObject:
   - component: {fileID: 128376980}
   - component: {fileID: 128376979}
   - component: {fileID: 128376978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -998,7 +999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 140251889}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1035,7 @@ GameObject:
   - component: {fileID: 145987637}
   - component: {fileID: 145987636}
   - component: {fileID: 145987635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1150,7 @@ GameObject:
   - component: {fileID: 177495854}
   - component: {fileID: 177495853}
   - component: {fileID: 177495852}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room1(Clone)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -1312,7 +1313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 198503254}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1342,7 +1343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221687528}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1374,7 +1375,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 223688329}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1406,7 +1407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 265510578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1443,7 @@ GameObject:
   - component: {fileID: 266505830}
   - component: {fileID: 266505829}
   - component: {fileID: 266505828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,6 +1591,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d70366767060c4882227f46013acd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bullets: {fileID: 2076724925}
+  spawnPoint: {fileID: 1500432305}
+  firespeed: 10
+  maxBullets: 6
+  bulletText: {fileID: 2076724926}
 --- !u!114 &268992982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1816,7 +1822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268992979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.387, y: -0.12799992, z: -1.218}
+  m_LocalPosition: {x: 2.477575, y: 0.773, z: -0.711}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1871,7 +1877,7 @@ GameObject:
   - component: {fileID: 291705184}
   - component: {fileID: 291705183}
   - component: {fileID: 291705182}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (4)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -2046,7 +2052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303962452}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2082,7 +2088,7 @@ GameObject:
   - component: {fileID: 317007076}
   - component: {fileID: 317007075}
   - component: {fileID: 317007074}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2191,7 +2197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 329585190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2227,7 +2233,7 @@ GameObject:
   - component: {fileID: 340009042}
   - component: {fileID: 340009041}
   - component: {fileID: 340009040}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2336,7 +2342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346384042}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2466,8 +2472,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369450949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9, y: -0.745, z: 7.296}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: -2.91, y: 0.532, z: -0.51}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -2489,7 +2495,7 @@ GameObject:
   - component: {fileID: 373072064}
   - component: {fileID: 373072063}
   - component: {fileID: 373072062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3(Clone) (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2663,7 +2669,7 @@ GameObject:
   - component: {fileID: 390538562}
   - component: {fileID: 390538561}
   - component: {fileID: 390538560}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2772,7 +2778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 404886687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2804,7 +2810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411490035}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2827,6 +2833,75 @@ Transform:
   m_Father: {fileID: 1421004805}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &414416797
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 349089473233255197, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_BaseOffset
+      value: 1.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 679812466400244596, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 888157871}
+    - target: {fileID: 679812466400244596, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 751588944}
+    - target: {fileID: 9198406434991285482, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_Name
+      value: Cacodemon (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
 --- !u!1 &451821380
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,7 +2917,7 @@ GameObject:
   - component: {fileID: 451821383}
   - component: {fileID: 451821382}
   - component: {fileID: 451821381}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (8)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -3021,7 +3096,7 @@ GameObject:
   - component: {fileID: 460956302}
   - component: {fileID: 460956301}
   - component: {fileID: 460956300}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3134,7 +3209,7 @@ GameObject:
   - component: {fileID: 504313095}
   - component: {fileID: 504313094}
   - component: {fileID: 504313093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3252,7 +3327,7 @@ GameObject:
   - component: {fileID: 511900414}
   - component: {fileID: 511900413}
   - component: {fileID: 511900412}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3367,7 +3442,7 @@ GameObject:
   - component: {fileID: 525681327}
   - component: {fileID: 525681326}
   - component: {fileID: 525681325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (9)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -3546,7 +3621,7 @@ GameObject:
   - component: {fileID: 529310226}
   - component: {fileID: 529310225}
   - component: {fileID: 529310224}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3655,7 +3730,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 536980869}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3770,7 +3845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 552353945}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3806,7 +3881,7 @@ GameObject:
   - component: {fileID: 558694456}
   - component: {fileID: 558694455}
   - component: {fileID: 558694454}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3919,7 +3994,7 @@ GameObject:
   - component: {fileID: 633346163}
   - component: {fileID: 633346162}
   - component: {fileID: 633346161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4044,7 +4119,7 @@ GameObject:
   - component: {fileID: 685953548}
   - component: {fileID: 685953547}
   - component: {fileID: 685953546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (2)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -4317,7 +4392,7 @@ GameObject:
   - component: {fileID: 745524827}
   - component: {fileID: 745524826}
   - component: {fileID: 745524825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4504,7 +4579,7 @@ GameObject:
   - component: {fileID: 811762602}
   - component: {fileID: 811762601}
   - component: {fileID: 811762600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4840,7 +4915,7 @@ GameObject:
   - component: {fileID: 934564677}
   - component: {fileID: 934564676}
   - component: {fileID: 934564675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4953,7 +5028,7 @@ GameObject:
   - component: {fileID: 950027030}
   - component: {fileID: 950027029}
   - component: {fileID: 950027028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5062,7 +5137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 956470543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5098,7 +5173,7 @@ GameObject:
   - component: {fileID: 956912438}
   - component: {fileID: 956912437}
   - component: {fileID: 956912436}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5214,7 +5289,7 @@ GameObject:
   - component: {fileID: 981148637}
   - component: {fileID: 981148636}
   - component: {fileID: 981148635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3(Clone) (1)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -5384,7 +5459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986111719}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5420,7 +5495,7 @@ GameObject:
   - component: {fileID: 987133117}
   - component: {fileID: 987133116}
   - component: {fileID: 987133115}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5533,7 +5608,7 @@ GameObject:
   - component: {fileID: 1051438059}
   - component: {fileID: 1051438058}
   - component: {fileID: 1051438057}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5642,7 +5717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1061889934}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5674,7 +5749,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1072708690}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5710,7 +5785,7 @@ GameObject:
   - component: {fileID: 1098538587}
   - component: {fileID: 1098538586}
   - component: {fileID: 1098538585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5823,7 +5898,7 @@ GameObject:
   - component: {fileID: 1106476821}
   - component: {fileID: 1106476820}
   - component: {fileID: 1106476819}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5932,7 +6007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1107426972}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5964,7 +6039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1109724054}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6000,7 +6075,7 @@ GameObject:
   - component: {fileID: 1125569968}
   - component: {fileID: 1125569967}
   - component: {fileID: 1125569966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6115,7 +6190,7 @@ GameObject:
   - component: {fileID: 1131874113}
   - component: {fileID: 1131874112}
   - component: {fileID: 1131874111}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -6290,7 +6365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1174055455}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6329,7 +6404,7 @@ GameObject:
   - component: {fileID: 1188892949}
   - component: {fileID: 1188892948}
   - component: {fileID: 1188892947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3(Clone) (4)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -6505,7 +6580,7 @@ GameObject:
   - component: {fileID: 1191876639}
   - component: {fileID: 1191876638}
   - component: {fileID: 1191876637}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (11)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -6770,6 +6845,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -6790,7 +6866,7 @@ GameObject:
   - component: {fileID: 1210287261}
   - component: {fileID: 1210287260}
   - component: {fileID: 1210287259}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3(Clone) (3)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -6964,7 +7040,7 @@ GameObject:
   - component: {fileID: 1266253102}
   - component: {fileID: 1266253101}
   - component: {fileID: 1266253100}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7123,7 +7199,7 @@ GameObject:
   - component: {fileID: 1292641171}
   - component: {fileID: 1292641170}
   - component: {fileID: 1292641169}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7232,7 +7308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1302357710}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7264,7 +7340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1305014212}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7296,7 +7372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1319905824}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7332,7 +7408,7 @@ GameObject:
   - component: {fileID: 1327784945}
   - component: {fileID: 1327784944}
   - component: {fileID: 1327784943}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7441,7 +7517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1348100586}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7479,7 +7555,7 @@ GameObject:
   - component: {fileID: 1351960229}
   - component: {fileID: 1351960228}
   - component: {fileID: 1351960227}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (3)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -7658,7 +7734,7 @@ GameObject:
   - component: {fileID: 1353139281}
   - component: {fileID: 1353139280}
   - component: {fileID: 1353139279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7767,7 +7843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1355131350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7803,7 +7879,7 @@ GameObject:
   - component: {fileID: 1370474079}
   - component: {fileID: 1370474078}
   - component: {fileID: 1370474077}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7918,7 +7994,7 @@ GameObject:
   - component: {fileID: 1387992738}
   - component: {fileID: 1387992737}
   - component: {fileID: 1387992736}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8099,7 +8175,7 @@ GameObject:
   - component: {fileID: 1421004801}
   - component: {fileID: 1421004800}
   - component: {fileID: 1421004799}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (5)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -8278,7 +8354,7 @@ GameObject:
   - component: {fileID: 1448209940}
   - component: {fileID: 1448209939}
   - component: {fileID: 1448209938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8391,7 +8467,7 @@ GameObject:
   - component: {fileID: 1468820640}
   - component: {fileID: 1468820639}
   - component: {fileID: 1468820638}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8598,8 +8674,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477769027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.252619, y: -0.745, z: -0.99682903}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalPosition: {x: 2.4721937, y: 0.436, z: -0.639829}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -8614,7 +8690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1483138758}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8647,7 +8723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1500432305}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8745,7 +8821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1524675064}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8781,7 +8857,7 @@ GameObject:
   - component: {fileID: 1525147656}
   - component: {fileID: 1525147655}
   - component: {fileID: 1525147654}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8896,7 +8972,7 @@ GameObject:
   - component: {fileID: 1533987554}
   - component: {fileID: 1533987553}
   - component: {fileID: 1533987552}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (6)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -9071,7 +9147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544156707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9107,7 +9183,7 @@ GameObject:
   - component: {fileID: 1580925887}
   - component: {fileID: 1580925886}
   - component: {fileID: 1580925885}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9304,6 +9380,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -9317,7 +9394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1608320599}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9349,7 +9426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1650397450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9381,7 +9458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1650757545}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9413,7 +9490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1660903540}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9445,7 +9522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1665332957}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9484,7 +9561,7 @@ GameObject:
   - component: {fileID: 1674150988}
   - component: {fileID: 1674150987}
   - component: {fileID: 1674150986}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3(Clone)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -9658,7 +9735,7 @@ GameObject:
   - component: {fileID: 1682014009}
   - component: {fileID: 1682014008}
   - component: {fileID: 1682014007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9767,7 +9844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1688048838}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9803,7 +9880,7 @@ GameObject:
   - component: {fileID: 1701044671}
   - component: {fileID: 1701044670}
   - component: {fileID: 1701044669}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9916,7 +9993,7 @@ GameObject:
   - component: {fileID: 1717061905}
   - component: {fileID: 1717061904}
   - component: {fileID: 1717061903}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10029,7 +10106,7 @@ GameObject:
   - component: {fileID: 1722720786}
   - component: {fileID: 1722720785}
   - component: {fileID: 1722720784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10412,7 +10489,7 @@ GameObject:
   - component: {fileID: 1768990175}
   - component: {fileID: 1768990174}
   - component: {fileID: 1768990173}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10527,7 +10604,7 @@ GameObject:
   - component: {fileID: 1802678304}
   - component: {fileID: 1802678303}
   - component: {fileID: 1802678302}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (1)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -10709,7 +10786,7 @@ GameObject:
   - component: {fileID: 1807354189}
   - component: {fileID: 1807354188}
   - component: {fileID: 1807354187}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3(Clone) (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10883,7 +10960,7 @@ GameObject:
   - component: {fileID: 1839139846}
   - component: {fileID: 1839139845}
   - component: {fileID: 1839139844}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10999,7 +11076,7 @@ GameObject:
   - component: {fileID: 1897092486}
   - component: {fileID: 1897092485}
   - component: {fileID: 1897092484}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3(Clone) (2)
   m_TagString: Placed
   m_Icon: {fileID: 0}
@@ -11169,7 +11246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1898676388}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11201,7 +11278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1911063195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11237,7 +11314,7 @@ GameObject:
   - component: {fileID: 1915082147}
   - component: {fileID: 1915082146}
   - component: {fileID: 1915082145}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11350,11 +11427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8
+      value: -1.91
       objectReference: {fileID: 0}
     - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 214925293799287090, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11388,6 +11465,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 349089473233255197, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
+      propertyPath: m_BaseOffset
+      value: 1.04
+      objectReference: {fileID: 0}
     - target: {fileID: 679812466400244596, guid: d5bc7309e2b640b4a9c7c8d2d217fdaa, type: 3}
       propertyPath: player
       value: 
@@ -11411,7 +11492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919516628}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11447,7 +11528,7 @@ GameObject:
   - component: {fileID: 1920197597}
   - component: {fileID: 1920197596}
   - component: {fileID: 1920197595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11556,7 +11637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1926568453}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11588,7 +11669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1955184482}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11723,7 +11804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1959695407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11761,7 +11842,7 @@ GameObject:
   - component: {fileID: 1985340606}
   - component: {fileID: 1985340605}
   - component: {fileID: 1985340604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room2(Clone) (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11940,7 +12021,7 @@ GameObject:
   - component: {fileID: 1996070834}
   - component: {fileID: 1996070833}
   - component: {fileID: 1996070832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12069,7 +12150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: 0
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
@@ -12111,7 +12192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2001899490}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12143,7 +12224,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008021150}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12175,7 +12256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2021002471}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12211,7 +12292,7 @@ GameObject:
   - component: {fileID: 2029104944}
   - component: {fileID: 2029104943}
   - component: {fileID: 2029104942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12459,7 +12540,7 @@ GameObject:
   - component: {fileID: 2106725215}
   - component: {fileID: 2106725214}
   - component: {fileID: 2106725213}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12568,7 +12649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2107963491}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12599,7 +12680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152811444117066237}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.230425, y: -0.12799992, z: -1.218}
+  m_LocalPosition: {x: 2.321, y: 0.773, z: -0.711}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -12709,15 +12790,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5698079944753103787, guid: c0180e5d0219fc84ca2f7fdd273a4544, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.252125
+      value: 0.963
       objectReference: {fileID: 0}
     - target: {fileID: 5698079944753103787, guid: c0180e5d0219fc84ca2f7fdd273a4544, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.81
+      value: 0.5119999
       objectReference: {fileID: 0}
     - target: {fileID: 5698079944753103787, guid: c0180e5d0219fc84ca2f7fdd273a4544, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.339
       objectReference: {fileID: 0}
     - target: {fileID: 5698079944753103787, guid: c0180e5d0219fc84ca2f7fdd273a4544, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13028,9 +13109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02d70366767060c4882227f46013acd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullets: {fileID: 1502718490097404257, guid: 52b5ad95cffbe78499558f4b1134c69d, type: 3}
+  Bullets: {fileID: 2076724925}
   spawnPoint: {fileID: 198503254}
-  firespeed: 20
+  firespeed: 10
   maxBullets: 6
   bulletText: {fileID: 2076724926}
 --- !u!114 &3682696409219663077
