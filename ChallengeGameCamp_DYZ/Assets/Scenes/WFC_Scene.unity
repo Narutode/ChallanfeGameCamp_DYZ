@@ -152,10 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99490bb8791eb6f44b3fe3b8ad942b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startRoom: {fileID: 2411558380069994823, guid: 39787b84fa5bf3048beb148bd2808c79, type: 3}
+  startRoom: {fileID: 3575799330493584276, guid: 387fdac682fae934eacfafca4d82970c, type: 3}
   availableRooms:
-  - {fileID: 3040177154435439735, guid: c58e09253b029104bbdf16af7c4e5aa2, type: 3}
-  - {fileID: 1195235213547627477, guid: f4523a67d67ffe2419767bb0fc21b8a6, type: 3}
+  - {fileID: 1872322157238486145, guid: 0a9d48a98cdc0c14ba893e710a082900, type: 3}
+  - {fileID: 3936827937188534807, guid: ba4457cd5d0892640b521ba79783fb88, type: 3}
+  - {fileID: 6404768512028643463, guid: 90386fa6fddf51942a9d5be41c05c172, type: 3}
   spawnedRooms: []
   allRooms: []
   maxLevel: 10

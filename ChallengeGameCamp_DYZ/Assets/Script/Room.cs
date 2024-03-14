@@ -29,4 +29,27 @@ public class Room : MonoBehaviour
             }
         }
     }
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("aaaaaaaaaaaaaaaa");
+        if (!this.CompareTag("Placed"))
+        {
+            if (collision.gameObject.CompareTag("Placed"))
+            {
+                Destroy(this.gameObject);
+            }
+        }
+    }
+
+    void OnCollisionStay(Collision collision)
+    {
+        Debug.Log("aaaaaaaaaaaaaaaa");
+        if (!this.CompareTag("Placed"))
+        {
+            if (collision.gameObject.CompareTag("Placed"))
+            {
+                Destroy(this.gameObject);
+            }
+        }
+    }
 }
