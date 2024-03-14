@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4207213037288548163}
   - component: {fileID: -3315521410825765669}
   - component: {fileID: 6398159362245894288}
+  - component: {fileID: 2110654039422114969}
+  - component: {fileID: 1918742305789312485}
   m_Layer: 0
   m_Name: prefab_room3
   m_TagString: Untagged
@@ -151,6 +153,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.4875145, y: 5.04, z: 11.2}
   m_Center: {x: 0.37569275, y: 0.6734521, z: -0.20441283}
+--- !u!64 &2110654039422114969
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936827937188534807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7875868240290995686, guid: baf83bf1dac26474bb0618a4c16ee3a9, type: 3}
+--- !u!65 &1918742305789312485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936827937188534807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.089281, y: 5.04, z: 6.3648334}
+  m_Center: {x: 7.3146915, y: 0.67345214, z: 2.2131693}
 --- !u!1 &4638429281046621530
 GameObject:
   m_ObjectHideFlags: 0

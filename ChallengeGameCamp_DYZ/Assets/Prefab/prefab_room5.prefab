@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6139813279951810805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.07, y: 0.14, z: -0.48}
+  m_LocalPosition: {x: -6.98, y: 0.75, z: -0.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6062732228098403796}
   - component: {fileID: -4677077278933099280}
   - component: {fileID: 4444805717734761787}
+  - component: {fileID: 894828782223042521}
   m_Layer: 0
   m_Name: prefab_room5
   m_TagString: Untagged
@@ -180,3 +181,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 13.253152, y: 3.12, z: 8}
   m_Center: {x: -0.1480844, y: 0.11245284, z: 0.3972827}
+--- !u!64 &894828782223042521
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404768512028643463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7875868240290995686, guid: 92a539466d65f3c45a09bb2975deb974, type: 3}
