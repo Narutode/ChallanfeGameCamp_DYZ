@@ -39,7 +39,7 @@ public class CacodemonController : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("Player").transform;
+        //player = GameObject.Find("Player").transform;
         projectile = GameObject.Find("Cacodemon-Bullet");
         agent = GetComponent<NavMeshAgent>();
     }
@@ -114,7 +114,7 @@ public class CacodemonController : MonoBehaviour
     private void AttackPlayer()
     {
         // Ennemi s'arrête pour attaquer
-        //agent.SetDestination(transform.position);
+        agent.SetDestination(transform.position);
 
         transform.LookAt(player);
 
