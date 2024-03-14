@@ -13,6 +13,8 @@ public class FireBulletOnActivate : MonoBehaviour
     public int maxBullets = 6;
     private int remainingBullets;
     public TextMeshProUGUI bulletText;
+
+    public AudioSource fireSound;
     
     public void Start()
     {
@@ -26,6 +28,7 @@ public class FireBulletOnActivate : MonoBehaviour
     {
         if (remainingBullets > 0)
         {
+            fireSound.Play();
             GameObject bullet = Instantiate(Bullets);
             bullet.transform.position = spawnPoint.position;
             bullet.GetComponent<Rigidbody>().velocity = spawnPoint.forward * firespeed;
@@ -47,6 +50,7 @@ public class FireBulletOnActivate : MonoBehaviour
         // Attendez un certain temps pour simuler le rechargement
         yield return new WaitForSeconds(2.0f);
         remainingBullets = maxBullets;
+        UpdateBulletUI();
     }
 
 }

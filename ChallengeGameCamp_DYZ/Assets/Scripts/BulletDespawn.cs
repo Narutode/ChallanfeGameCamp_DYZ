@@ -19,7 +19,7 @@ public class BulletDespawn : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.layer == 3 || collision.gameObject.layer == 6)
         {

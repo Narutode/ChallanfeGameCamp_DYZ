@@ -17,15 +17,16 @@ public class Player : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
+        UpdateHealthUI();
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag("EnemyBullet"))
+        if (collision.gameObject.CompareTag("EnemyBullet"))
         {
             TakeDamage(10); // Réduire de 10 points de vie si touché par une balle ennemie
         }
-        else if (other.CompareTag("Exit"))
+        else if (collision.gameObject.CompareTag("Exit"))
         {
             WinGame(); // Gagner le jeu si atteindre la zone de sortie
         }

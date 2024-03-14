@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6398159362245894288}
   - component: {fileID: 2110654039422114969}
   - component: {fileID: 1918742305789312485}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: prefab_room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3936827937188534807}
   m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1292992706924894096}
@@ -187,7 +187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292992706924894096}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2446006765265481272}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Link1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: door
       objectReference: {fileID: 0}
+    - target: {fileID: 9197894434024129609, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
 --- !u!4 &3922472448411353197 stripped
@@ -358,6 +362,10 @@ PrefabInstance:
     - target: {fileID: 9197894434024129609, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
       propertyPath: m_Name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 9197894434024129609, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feb59eb1f29000343a5a2c25ae550799, type: 3}
