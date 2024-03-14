@@ -18,6 +18,8 @@ public class CacodemonController : MonoBehaviour
 
     public int health = 100;
 
+    public float bulletSpeed;
+
     public TextMeshProUGUI scoreEndGame, scoreInGame;
 
     public Transform spawnBullet;
@@ -125,7 +127,7 @@ public class CacodemonController : MonoBehaviour
             // Attaque
             transform.LookAt(player);
             Rigidbody rb = Instantiate(projectile, spawnBullet.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 25f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * bulletSpeed, ForceMode.Impulse);
             //rb.AddForce(transform.up * 5f,ForceMode.Impulse);
 
             alreadyAttacked = true;

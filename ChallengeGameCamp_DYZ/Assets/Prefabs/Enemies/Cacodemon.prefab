@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4608546410814293820}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.444, z: 0.674}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 214925293799287090}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9198406434991285482
 GameObject:
@@ -57,7 +57,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9198406434991285482}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -66,6 +65,7 @@ Transform:
   - {fileID: 4368573537295663761}
   - {fileID: 8345736733184896367}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &679812466400244596
 MonoBehaviour:
@@ -88,12 +88,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   health: 100
+  bulletSpeed: 10
   scoreEndGame: {fileID: 0}
   scoreInGame: {fileID: 0}
   spawnBullet: {fileID: 8345736733184896367}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 50
-  timeBetweenAttacks: 1
+  timeBetweenAttacks: 5
   projectile: {fileID: 0}
   sightRange: 10
   attackRange: 5
@@ -107,17 +108,9 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9198406434991285482}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Radius: 0.6
   m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!195 &349089473233255197
@@ -128,7 +121,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9198406434991285482}
   m_Enabled: 1
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
@@ -147,7 +140,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 214925293799287090}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 56ec5997e6518dd4c9f89f47252705f7, type: 3}
@@ -215,9 +207,6 @@ PrefabInstance:
       value: caco
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56ec5997e6518dd4c9f89f47252705f7, type: 3}
 --- !u!4 &4368573537295663761 stripped
 Transform:
