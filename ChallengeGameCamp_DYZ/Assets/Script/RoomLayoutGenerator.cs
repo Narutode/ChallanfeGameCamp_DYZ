@@ -70,7 +70,11 @@ public class RoomLayoutGenerator : MonoBehaviour
                         {
                             int randIndex = Random.Range(0, spawnedRooms.Count);
                             spawnedRooms[randIndex].tag = "Placed";
-                            linkP.transform.Find("Door").GetComponent<Door>().canOpen = true;
+                            if(linkP != null) {
+                                var door = linkP.Find("Door");
+                                if (door != null)
+                                    door.GetComponent<Door>().canOpen = true;
+                            }
                         }
                     }
                 }
