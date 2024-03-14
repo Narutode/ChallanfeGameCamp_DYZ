@@ -27,12 +27,12 @@ public class RoomLayoutGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (curLevel <= maxLevel)
+        if (curLevel < maxLevel)
         {
             if(coroutineStop)
             {
-                StartCoroutine(spawnAllRooms());
                 curLevel++;
+                StartCoroutine(spawnAllRooms());
             }
         }
     }
@@ -49,26 +49,29 @@ public class RoomLayoutGenerator : MonoBehaviour
                 var linksParent = getLinks(room);
                 foreach (var linkP in linksParent)
                 {
-                    if(curLevel == maxLevel && !endPlaced)
+                    if (room != null)
                     {
-                        spawnedRooms.AddRange(spawnRoom4Orientation(endRoom, room, linkP.transform.position));
-                        yield return null;
-                        spawnedRooms.RemoveAll(t => t == null);
-                        endPlaced = true;
-                    }
-                    else
-                    {
-                        foreach (var aRoom in availableRooms)
+                        if (curLevel == maxLevel && !endPlaced)
                         {
-                            spawnedRooms.AddRange(spawnRoom4Orientation(aRoom, room, linkP.transform.position));
+                            spawnedRooms.AddRange(spawnRoom4Orientation(endRoom, room, linkP.position));
+                            yield return null;
+                            spawnedRooms.RemoveAll(t => t == null);
                         }
-                        yield return null;
-                        spawnedRooms.RemoveAll(t => t == null);
-                    }
-                    if (spawnedRooms.Count > 0)
-                    {
-                        int randIndex = Random.Range(0, spawnedRooms.Count);
-                        spawnedRooms[randIndex].tag = "Placed";
+                        else
+                        {
+                            foreach (var aRoom in availableRooms)
+                            {
+                                spawnedRooms.AddRange(spawnRoom4Orientation(aRoom, room, linkP.position));
+                            }
+                            yield return null;
+                            spawnedRooms.RemoveAll(t => t == null);
+                        }
+                        if (spawnedRooms.Count > 0)
+                        {
+                            int randIndex = Random.Range(0, spawnedRooms.Count);
+                            spawnedRooms[randIndex].tag = "Placed";
+                            linkP.transform.Find("Door").GetComponent<Door>().canOpen = true;
+                        }
                     }
                 }
             }

@@ -159,7 +159,7 @@ MonoBehaviour:
   - {fileID: 3936827937188534807, guid: ba4457cd5d0892640b521ba79783fb88, type: 3}
   spawnedRooms: []
   allRooms: []
-  maxLevel: 5
+  maxLevel: 10
   curLevel: 0
   coroutineStop: 1
   endPlaced: 0
